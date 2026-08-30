@@ -5,7 +5,7 @@ import numpy as np
 try:
     from models import predict_failure_risk
 except ImportError:
-    # Safe fallback if models module is loaded from different path
+    # Safe fallback if models module is loaded from a different path
     def predict_failure_risk(sensor_input):
         temp = sensor_input.get('temperature', 75.0)
         vibe = sensor_input.get('vibration', 0.04)
@@ -80,6 +80,7 @@ class PredictiveAgent:
         
         return {
             "failure_probability": failure_prob,
+            "risk_score": failure_prob / 100.0,  # Key required by app.py (0.0 to 1.0 range)
             "status": "HIGH RISK" if failure_prob > 50.0 else "STABLE",
             "primary_driver": primary_driver
         }
