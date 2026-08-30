@@ -1,0 +1,10 @@
+FACTORY STANDARD OPERATING PROCEDURE (SOP) - AI FACTORY 2.0
+Document ID: SOP-MNT-2026
+
+1. TEMPERATURE OVERHEAT PROTOCOL (Temp > 90°C):
+- Action: Reduce spindle RPM by 30% immediately or trigger Emergency Coolant Flush.
+- Recommended Parts: Check Heat Exchanger Valve (Part #HX-402).
+
+2. HIGH VIBRATION PROTOCOL (Vibration > 7.0 mm/s):
+- Action: Halt production line. Inspect motor alignment and mounting bolts.
+- Recommended Parts: Replace Main Bearing Block (Part #BB-901).
